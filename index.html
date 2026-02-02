@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="text-ui">
+      <h1 id="point">Score: 0</h1>
+    </div>
+
+    <div class="container">
+      <div class="button-grid">
+        <div>
+          <button
+            id="1"
+            style="background-color: #8b0000"
+            onclick="
+              answer.value += 1;
+              playSound('Push');
+            "
+          ></button>
+          <!-- dark red -->
+          <button
+            id="2"
+            style="background-color: #b35900"
+            onclick="
+              answer.value += 2;
+              playSound('Push');
+            "
+          ></button>
+          <!-- dark orange -->
+          <button
+            id="3"
+            style="background-color: #b3b300"
+            onclick="
+              answer.value += 3;
+              playSound('Push');
+            "
+          ></button>
+          <!-- dark yellow -->
+        </div>
+        <div>
+          <button
+            id="4"
+            style="background-color: #058b00"
+            onclick="
+              answer.value += 4;
+              playSound('Push');
+            "
+          ></button>
+          <!-- olive green -->
+          <button
+            id="5"
+            style="background-color: #006400"
+            onclick="
+              answer.value += 5;
+              playSound('Push');
+            "
+          ></button>
+          <!-- dark green -->
+          <button
+            id="6"
+            style="background-color: #006666"
+            onclick="
+              answer.value += 6;
+              playSound('Push');
+            "
+          ></button>
+          <!-- dark cyan -->
+        </div>
+        <div>
+          <button
+            id="7"
+            style="background-color: #004c66"
+            onclick="
+              answer.value += 7;
+              playSound('Push');
+            "
+          ></button>
+          <!-- teal blue -->
+          <button
+            id="8"
+            style="background-color: #000041"
+            onclick="
+              answer.value += 8;
+              playSound('Push');
+            "
+          ></button>
+          <!-- dark blue -->
+          <button
+            id="9"
+            style="background-color: #4b0082"
+            onclick="
+              answer.value += 9;
+              playSound('Push');
+            "
+          ></button>
+          <!-- indigo -->
+        </div>
+        <h2 class="countdown" style="text-align: center; font-size: 30px">3</h2>
+        <input id="answer" />
+      </div>
+    </div>
+
+    <div class="text-ui">
+      <button id="start-btn" onclick="startGame()">Begin</button>
+    </div>
+
+    <audio id="sndPush" src="push.mp3" preload="auto"></audio>
+    <audio id="sndRight" src="right.mp3" preload="auto"></audio>
+    <audio id="sndWrong" src="wrong.mp3" preload="auto"></audio>
+    <audio id="sndLoad" src="loading.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
